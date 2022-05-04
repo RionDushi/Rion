@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(./foto1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.login{
+    background-color: azure;
+    border: 2px dashed black;
+    width: 320px;
+    height: 520px;
+    margin-top: 75px;
+    margin-left: 40%;
+    box-shadow: 0px 0px 95px 16px rgba(60,237,215,0.76);
+    -webkit-box-shadow: 0px 0px 95px 16px rgba(60,237,215,0.76);
+    -moz-box-shadow: 0px 0px 95px 16px rgba(60,237,215,0.76);
+
+}
+.login h2{
+    text-align: center;
+    margin-top: 15px;
+}
+.login form{
+    margin-top: 45px;
+    text-align: center;
+}
+.login button{
+    margin-left: 85px;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+.login h6{
+    margin-left: 65px;
+    margin-top: 5px;
+}
+.login a{
+    text-decoration: none;
+    opacity: 50%;
+}
+button{
+    padding: 6px;
+    color: black;
+    background-color: lightgray;
+}
+.fl{
+    width: 250px;
+    height: 100px;
+    border-radius: 2px;
+    border: 2px solid black;
+    margin: 145px 0px 0px 30px;
+}
+.fl p{
+    margin: 10px 0px 0px 10px ;
+}
+.fl a{
+    margin: 20px 0px 0px 145px;
+}
+a{
+    color: red;
+}
