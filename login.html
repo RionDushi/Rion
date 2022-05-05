@@ -11,12 +11,16 @@
   <div class="login">
         <h2>Log <span>in</span> </h2> <br> 
         <center>
-            <label style="color:red;font-size:15px;opacity:0;" id="labelUsername" >Incorrect Username</label> <br>
-           EMALI <br> <input type="text" id="username"> <br> 
-           <label style="color:red;font-size:15px;opacity:0;" id="labelPassword" >Incorrect Password</label> <br>
-           PASSWORD <br> <input type="password" id="password" > <br> <br>
+             <input type="text" id="username"  maxlength="75" placeholder="Username or email" > <br>
+           <!-- <label style="color:red;font-size:15px;opacity:0;" id="labelUsername" >Incorrect Username</label> <br>   -->
+           
+            <br> <input type="password" id="password" placeholder="Password"> <br> <br>
+            <!-- <label style="color:red;font-size:15px;opacity:0;" id="labelPassword" >Incorrect Password</label> <br> <br> --> 
 
-             <input type="button" value="Submit" id="submit" onclick="ChangeStyle()"> </center>
+             <input type="button" value="Submit" id="submit" onclick="ChangeStyle()">   <br> <br>
+
+             <label style="color: red;font-size:15px;opacity:0;" id="incorrectPU" >Sorry, your password was incorrect. <br> Please double-check your password. <br> Or check your username. </label>
+            </center> 
          </form>
      <div class="fl">
        <p> 
@@ -26,50 +30,22 @@
           <a href="index.html">Open new acc </a>
      </div>
      
-  </div> 
-  <div class="rion">
-     <input type="button" value="Kliko per te pare sa eshte ora" id="ora" onclick="ora()">
+     <div class="rion" >
+     
+     <!-- <input type="button" value="Kliko per ta pare oren !!" id="ora" onclick="ora()"> -->
+     <p id = "JSlink" style =
+     "font-size: 19px; font-weight: bold;">
+     </p>
+     <button onclick = "JSlink()" id="a">
+			click here
+		</button>
      </div>
 
-    <script>
+  </div> 
 
-     function ChangeStyle(){
+    <script src="./script.js">
 
-       var Username=document.getElementById('username');
-       var Password=document.getElementById('password');
-
-       var element1=document.getElementById('labelUsername');
-       var elemnet2=document.getElementById('labelPassword');
-
-       if(username.value =="" && password.value ==""){
-
-          element1.style.opacity=100;
-          elemnet2.style.opacity=100;
-
-       }
-       else if(username.value==""){
-
-            element1.style.opacity=100;
-
-       }
-
-       else if(password.value==""){
-
-           elemnet2.style.opacity=100;
-
-       }
-     }
-
-     function ora(){
-          
-        var rion=new Date();
-
-        alert("Ora per momenti eshte :"+rion.getHours()+":"+rion.getMinutes()+":"+rion.getSeconds());
-
-
-     }
-
-
+     
     </script>
 </body>
 </html>
