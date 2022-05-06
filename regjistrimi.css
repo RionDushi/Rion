@@ -1,0 +1,78 @@
+body{
+    
+    background-color: rgb(203, 242, 242);
+    /* background-image: url(./foto9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    margin: 0px;
+    padding: 0px;
+
+}
+.regjistrimi{
+    
+    color: red;
+    border: 10px solid red;
+    width: 700px;
+    height: 450px;
+    margin: 75px 0px 0px 50px;
+    text-align: center;
+
+}
+#firstname{
+
+    margin-left: 15px;
+
+}
+#lastname{
+
+    margin-left: 15px;
+
+}
+#email{
+
+    margin-left: 15px;
+
+}
+#phone{
+
+    margin-left: 15px;
+
+}
+#kategoria{
+
+    padding: 3px;
+    width: 300px;
+
+}
+.id1{
+
+    margin-left: -199px;
+    margin-top: 15px;
+
+}
+.id2{
+    margin-left: -205px;
+    margin-top: 15px;
+}
+.id3{
+    margin-left: -196px;
+    margin-top: 15px;
+}
+.id4{
+    margin-left:-144px;
+    margin-top: 15px;
+}
+.id5{
+    margin-left: -80px;
+    margin-top: 15px;
+}
+.id6{
+    margin-top: 35px;
+    margin-left: 85px;
+}
+.img{
+    float: center;
+    margin-left: 885px;
+    margin-top: -380px;
+   
+}
