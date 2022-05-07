@@ -13,19 +13,19 @@
         <h2 style="margin-left: -380px;margin-top: 35px;">Regjistrimi</h2>  <br>
         <div class="id1">
             Name : <input type="text" id="firstname" placeholder="First Name" >
-            <label style="color: black;font-size: medium; opacity: 0;" id="dushi">Name is missing</label>
+            <label style="color: #f51515;font-size: medium; opacity: 0;" id="dushi">Name is missing</label>
         </div>
-        <div class="id2">
+        <div class="id2">   
             LastName :<input type="text" id="lastname" placeholder="Last Name" > 
-            <label style="color: black;font-size: medium;opacity: 0;" id="label2">Lastname is missing</label>
+            <label style="color: #f51515;font-size: medium;opacity: 0;" id="gerti">Lastname is missing</label>
         </div>
         <div class="id3">
             Email : <input type="text" id="email" placeholder="Type your email">
-            <label style="color: black;font-size: medium;opacity: 0;" id="label3">Email is missing</label>
+            <label style="color: #f51515;font-size: medium;opacity: 0;" id="arlindi">Email is missing</label>
         </div>
         <div class="id4">
             Phone : <input type="number" id="phone" placeholder="telefon number">
-            <label style="color: black;font-size: medium;opacity: 0;" id="label4">Phone number is missing</label>
+            <label style="color: #f51515;font-size: medium;opacity: 0;" id="erioni">Phone number is missing</label>
         </div>
         <div class="id5">
              Kategoria : <select name="Zgjidh Kategorit" id="kategoria">
@@ -34,10 +34,15 @@
             <option value="">Profi</option>
             <option value="">Master</option>
         </select> 
-        <label style="color: black;font-size: medium;opacity: 0;" id="label5">Kategoria is missing</label>
+        <label style="color: #f51515;font-size: medium;opacity: 0;" id="klodi">Kategoria is missing</label>
         </div>
         <div class="id6">
-            <input type="button" id="regjist" value="Submit" onclick=rion()>
+            <input type="button" id="regjist" value="Submit" onclick=ChangeStyle()>
+        </div>
+        <div class="faqja">
+
+            <button><a href="./index.html">Faqja Kryesore</a></button>
+
         </div>
 
 
@@ -47,7 +52,7 @@
         <img src="./foto10.jpg" width="300px" height="300px" alt="">
     </div>
     <script>
-        function rion(){
+        function ChangeStyle(){
 
             var Name=document.getElementById(firstname);
             var Lastname=document.getElementById(lastname);
@@ -56,16 +61,45 @@
             var Kategoria=document.getElementById(kategoria);
 
             var element1=document.getElementById(dushi);
-            var element2=document.getElementById(label2);
-            var element3=document.getElementById(label3);
-            var element4=document.getElementById(label4);
-            var element5=document.getElementById(label5);
+            var element2=document.getElementById(gerti);
+            var element3=document.getElementById(arlindi);
+            var element4=document.getElementById(erioni);
+            var element5=document.getElementById(klodi);
 
-            if(firstname.value ==""){
+            if(firstname.value =="" && lastname.value =="" && email.value =="" && phone.value =="" && kategoria.value ==""){
 
-               element1.style.opacity=100;
-                
-        }
+               dushi.style.opacity= 100 ;
+               gerti.style.opacity= 100 ;
+               arlindi.style.opacity= 100 ;
+               erioni.style.opacity= 100 ;
+               klodi.style.opacity= 100 ;
+    
+             }
+             else if(firstname.value ==""){
+
+                dushi.style.opacity= 100 ;
+
+             }
+             else if(lastname.value ==""){
+
+                gerti.style.opacity= 100 ;
+
+             }
+             else if(email.value ==""){
+
+                arlindi.style.opacity= 100 ;
+        
+             }
+             else if(phone.value ==""){
+
+                erioni.style.opacity= 100 ;
+
+             }
+             else if(kategoria.value ==""){
+
+                klodi.style.opacity= 100 ;
+
+             }
         }
 
     </script>
